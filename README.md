@@ -1,6 +1,6 @@
 # Ansible-Python
 
-## 1-Установка Python
+## 1-Установка Python (ALT)
 
 Для начала нужно установить отдельную В/М и подключить ее к интернету
 
@@ -33,6 +33,17 @@ apt-get install pip
 Добавим параметры для компиляции
 ```
 ./configure --prefix=/usr/local --with-ensurepip=install
+```
+Начинаем компилировать
+```
+make
+make install
+```
+Удалим за собой весь мусор
+```
+make clean
+cd /
+rm -rf /usr/local/bin/Python-3.12.1
 ```
 Проверяем, что Python3.12 установился
 ```

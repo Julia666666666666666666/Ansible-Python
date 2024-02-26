@@ -89,3 +89,20 @@ python3.12 -V
 ```
 sudo ln -s /usr/local/bin/python3.12 /usr/local/bin/python
 ```
+## 2-Создание виртуального окружения Python
+
+В домашнем каталоге пользователя создаем папку ansible. Пользователь root
+```
+mkdir /home/root/ansible
+cd /home/root/ansible
+```
+Создаем виртуальное окружение
+```
+python3.12 -m venv .env
+```
+Активируем его
+```
+source .env/bin/activate
+```
+Итог
+

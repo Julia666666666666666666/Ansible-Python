@@ -158,15 +158,10 @@ host_key_checking = False
 
 ```
 VMs:
-
   hosts:
-
     ISP:
-
       ansible_ssh_host: 10.15.15.2
-
       vars:
-
         interfaces: [
           { ifname: 'ens161', ifaddr: '2.2.2.1', mask: '/30'},
           { ifname: 'ens192', ifaddr: '10.12.66.2', mask: '/24'},
@@ -201,10 +196,7 @@ VMs:
           { ifname: 'ens192', ifaddr: '192.168.0.130', mask: '/27', gw: '192.168.0.129'}
         ] 
   vars:
-
     ansible_connection: ssh
-
     ansible_user: root
-
     ansible_password: P@ssw0rd
 ```
